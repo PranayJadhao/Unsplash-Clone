@@ -3,7 +3,7 @@ import './App.css';
 import Navbar1 from "./components/Navbar/Navbar-1"
 import Navbar2 from "./components/Navbar/Navbar-2"
 import Home from "./Pages/Home"
-
+import Signup from "./Pages/Signup"
 
 
 
@@ -13,9 +13,10 @@ function App() {
     <br></br>
      <Navbar1></Navbar1>
      <br></br>
-     <Navbar2></Navbar2>
+     {/* <Navbar2></Navbar2>
      <br></br>
-     <Home></Home>
+     <Home></Home> */}
+     <Signup></Signup>
     </div>
   );
 }

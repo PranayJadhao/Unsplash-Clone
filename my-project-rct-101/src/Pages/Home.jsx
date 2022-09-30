@@ -5,7 +5,7 @@ import {Box,Image,Text,Input,InputGroup,InputLeftElement,HStack, SimpleGrid,Head
     PopoverBody,
     PopoverFooter,
     PopoverArrow,
-    PopoverCloseButton,Button,
+    PopoverCloseButton,Button,IconButton,
     PopoverAnchor,} from "@chakra-ui/react"
 import {Search2Icon,ArrowDownIcon,StarIcon,AddIcon} from "@chakra-ui/icons"
 import { left } from "@popperjs/core";
@@ -15,10 +15,15 @@ import Dataarray from "../Database/database"
 
 function AddtoFavourate(){
    return(
-        console.log('gvg')
-    // <StarIcon w='30px' h='30px' color='red.500' >
-    
-    // </StarIcon>
+          console.log('gvg')
+      //   <IconButton
+       
+      //   colorScheme='teal'
+      //   aria-label='Call Sage'
+      //   fontSize='20px'
+      //   icon={<StarIcon />}
+       
+      // />
     
    )
 }
@@ -58,29 +63,47 @@ function Home(){
                 <Grid sx={{margin:'auto'}}>
                
                 <GridItem mt='10'>
-                <Box bg='teal.50' boxSize={450} >
+                <Box bg='teal.50' boxSize={470} >
                 <Image boxSize='sm' src={img.YVj9w_src} m='auto'></Image>
                 <Text>Image By:{img.N2odk}</Text>
                 <Box>
                 <HStack spacing='24px' justifyContent='space-evenly' mt='2'>
-                <Popover>
-  <PopoverTrigger>
-    <Button><AddIcon></AddIcon></Button>
-  </PopoverTrigger>
-  <PopoverContent>
-    <PopoverArrow />
-    <PopoverCloseButton />
-    <PopoverHeader>Confirmation!</PopoverHeader>
-    <PopoverBody>Are you sure you want to have that milkshake?</PopoverBody>
-  </PopoverContent>
-</Popover>
-  <StarIcon w='20px' h='20px' color='gray.500' onClick={AddtoFavourate}>
-    
-  </StarIcon>
-  <AddIcon w='20px' h='20px'></AddIcon>
-  <ArrowDownIcon w='20px' h='20px' >
-    
-  </ArrowDownIcon>
+
+
+                 <IconButton
+                  variant='outline'
+                  colorScheme='teal'
+                  aria-label='Call Sage'
+                  fontSize='20px'
+                  icon={<AddIcon />}
+                />
+
+                  <IconButton
+                  variant='outline'
+                  colorScheme='teal'
+                  aria-label='Call Sage'
+                  fontSize='20px'
+                  icon={<StarIcon />}
+                  onClick={AddtoFavourate}
+                />
+
+                  <IconButton
+                  variant='outline'
+                  colorScheme='teal'
+                  aria-label='Call Sage'
+                  fontSize='20px'
+                  icon={<ArrowDownIcon />}
+                />
+
+
+
+
+
+
+
+
+
+  
 </HStack>
                 </Box>
                 </Box>
@@ -91,7 +114,7 @@ function Home(){
                 
                 
                
-                {/* <Text>{img.lXK9Z}</Text> */}
+               
                 </Grid>
                
             ))}
