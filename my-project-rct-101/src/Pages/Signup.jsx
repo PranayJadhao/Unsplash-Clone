@@ -37,7 +37,7 @@ function Signup(){
     
     
     <Box>
-    <Container size='xl'>
+    <Container size='xl' lineHeight={10}>
 
  
         <FormControl>
@@ -47,7 +47,7 @@ function Signup(){
         <Button leftIcon={<EmailIcon />} colorScheme='teal' variant='solid'>
     Continue with Email
   </Button>
-  <Heading>OR</Heading>
+  <Text>OR</Text>
 
   <Grid templateColumns='repeat(2, 1fr)' gap={4}>
     <GridItem colSpan={1}>
