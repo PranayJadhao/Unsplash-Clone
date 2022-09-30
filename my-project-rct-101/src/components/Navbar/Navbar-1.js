@@ -31,7 +31,7 @@ return (
       pointerEvents='none'
       children={<Search2Icon color='gray.300' />}
     />
-    <Input type='text' variant='filled' placeholder='Search photos' borderRadius={50}/>
+    <Input type='text' variant='filled' placeholder='Search photos' borderRadius={50} htmlSize={50} width='auto' mr='10px'/>
   </InputGroup>
 </Box>
 
