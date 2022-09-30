@@ -4,7 +4,7 @@ import Navbar1 from "./components/Navbar/Navbar-1"
 import Navbar2 from "./components/Navbar/Navbar-2"
 import Home from "./Pages/Home"
 import Signup from "./Pages/Signup"
-
+import Login from "./Pages/Login"
 
 
 function App() {
@@ -16,7 +16,8 @@ function App() {
      {/* <Navbar2></Navbar2>
      <br></br>
      <Home></Home> */}
-     <Signup></Signup>
+     {/* <Signup></Signup> */}
+     <Login></Login>
     </div>
   );
 }
