@@ -1,6 +1,7 @@
 
+
 import {Heading,Grid,GridItem,Box,Image,Text,HStack,IconButton, } from "@chakra-ui/react"
-import data_wallpaper from "../Database/data_wallpaper"
+import data_fashion from "../Database/data_fashion"
 import {AddIcon,StarIcon,ArrowDownIcon} from "@chakra-ui/icons"
 function AddtoFavourate(){
     return(
@@ -22,21 +23,16 @@ function AddtoFavourate(){
  )
  }
 
-
-
-
-function Wallpaper(){
+function Fashion(){
     return(
-        // <Heading>Wallpaper Page</Heading>
-
-<Box>
+        <Box>
         <Grid templateColumns='repeat(3, 1fr)'  gap={3}>
-        {data_wallpaper.map((img)=>(
+        {data_fashion.map((img)=>(
             <Grid sx={{margin:'auto'}}>
            
             <GridItem mt='10'>
             <Box bg='teal.50' boxSize={450} >
-            <Image boxSize='sm' src={img.YVj9w_src} m='auto'></Image>
+            <Image boxSize='sm' src={img.img} m='auto'></Image>
             <Box>
                 <HStack spacing='24px' justifyContent='space-evenly' mt='2'>
 
@@ -100,4 +96,4 @@ function Wallpaper(){
 </Box>
     )
 }
-export default Wallpaper;
+export default Fashion;

@@ -6,7 +6,7 @@ import {Box,Flex,Image,Heading,Text,  FormControl,
     GridItem,
     Container,} from "@chakra-ui/react"
 import {EmailIcon} from "@chakra-ui/icons"
-
+import {Link} from "react-router-dom"
 
 
 
@@ -76,7 +76,8 @@ function Signup(){
     </GridItem>
 
     <GridItem colSpan={2} w='full'>
-        <Button w='full' bg='black' color='white'>Join</Button>
+    <Link to={`/login`}> <Button w='full' bg='black' color='white'>Join</Button></Link>
+       
     </GridItem>
     
   </Grid>

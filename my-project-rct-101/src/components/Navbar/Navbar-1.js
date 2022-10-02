@@ -6,7 +6,7 @@ import styles from "../Navbar/Navbar.module.css"
 
 const links = [
 
-  { path: "/", title: "Explore" },
+  { path: "/explore", title: "Explore" },
   { path: "/advertise", title: "Advertise" },
   { path: "/blog", title: "Blog" },
   { path: "/login", title: "Login" },
@@ -36,15 +36,7 @@ return (
 </Box>
 
 
-{/* 
-  <Box>
-    <NavLink>Home</NavLink>
-    <NavLink>Home</NavLink>
-    <NavLink>Home</NavLink>
-    <NavLink>Home</NavLink>
-    <NavLink>Home</NavLink>
-    <NavLink>Home</NavLink>
-  </Box> */}
+
  
   <Box
   
